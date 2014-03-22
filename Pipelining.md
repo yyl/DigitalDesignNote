@@ -11,9 +11,9 @@ Design a state machine so that the outputs during one clock period depend on the
 
 ### From computer architecture
 
-> like a assembly line.
+> like an assembly line.
 
-Pipelining is an implementation technique in which multiple instructions are overlapped in execution.
+Pipelining is an implementation technique in which multiple instructions are overlapped in execution. It increases instruction _throughput_ instead of instruction _execution_ _time_ or _latency_.
 
 ![Pipelined laundry](pipelined_laundry.png)
 
