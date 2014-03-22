@@ -66,3 +66,10 @@ Behavioral descriptions => logic-circuit structures
 - built-in gates: and/nand, or/nor, xor/xnor, not/buf and 1-input three-state 
 
 ![Verilog structural statement](verilog_structural.png)
+
+- two ways of stating instance
+    - component instance-identifier (expr, expr, ..., expr); => `not U3 (notinh2, inh2);`
+        - in this way the order of port name matters: `output, input, input, ...`
+    - component instance-identifier (.port-name(expr), ..., .port-name(expr)); => `VrInh U1 ( .out(inh1), .in(in1), .invin(in2) );`
+- All instance statements in the figure are execture _concurrently_
+- different order of statements result in the same circuit
