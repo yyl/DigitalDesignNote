@@ -7,7 +7,14 @@ Design a state machine so that the outputs during one clock period depend on the
 
 - one additional logic (flip-flops) is attached to the output
 - usable only if you know the desired next output value one clock period _in_ _advance_
+    - because your next input could depend on it!
 
-#### From computer architecture
+### From computer architecture
 
-Pipelining is an implementation technique in which multiple instructions are overlapped in execution. "like a assembly line."
+"like a assembly line."
+
+Pipelining is an implementation technique in which multiple instructions are overlapped in execution.
+
+![Pipelined laundry](pipelined_laundry.png)
+
+#### Pipeline hazards
