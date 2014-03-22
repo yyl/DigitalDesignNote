@@ -96,6 +96,6 @@ Describe the flow of data and operations on the circuit for **combinational circ
 
 #### always block
 
-![Always block]always_block.png)
+![Always block](always_block.png)
 
 - describe _sequential_ circuit
