@@ -68,8 +68,34 @@ Behavioral descriptions => logic-circuit structures
 ![Verilog structural statement](verilog_structural.png)
 
 - two ways of stating instance
-    - component instance-identifier (expr, expr, ..., expr); => `not U3 (notinh2, inh2);`
+    - component instance-identifier (expr, expr, ..., expr);
+        - `not U3 (notinh2, inh2);`
         - in this way the order of port name matters: `output, input, input, ...`
-    - component instance-identifier (.port-name(expr), ..., .port-name(expr)); => `VrInh U1 ( .out(inh1), .in(in1), .invin(in2) );`
+    - component instance-identifier (.port-name(expr), ..., .port-name(expr)); 
+        - `VrInh U1 ( .out(inh1), .in(in1), .invin(in2) );`
 - All instance statements in the figure are execture _concurrently_
 - different order of statements result in the same circuit
+
+### Dataflow design elements
+***
+
+Describe the flow of data and operations on the circuit for **combinational circuit**.
+
+![Verilog dataflow statement 1](verilog_dataflow1.png)
+
+- `assign name = expr;`
+- dataflow code for a prime-number detector
+- use bitwise-boolean operators instead of gates and connections to implement the equations
+
+![Verilog dataflow statement 1](verilog_dataflow1.png)
+
+- conditional operator `?:` oeprates like a _2-ipnut_ _multiplexer_
+
+### Behavioral design elements (procedural code)
+***
+
+#### always block
+
+![Always block]always_block.png)
+
+- describe _sequential_ circuit
