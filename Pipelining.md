@@ -11,10 +11,14 @@ Design a state machine so that the outputs during one clock period depend on the
 
 ### From computer architecture
 
-"like a assembly line."
+> like a assembly line.
 
 Pipelining is an implementation technique in which multiple instructions are overlapped in execution.
 
 ![Pipelined laundry](pipelined_laundry.png)
 
 #### Pipeline hazards
+
+1. structural hazard: cannot support the combination of instructions in the same clock period.
+2. data hazard: when current instruction has to be _stalled_ to wait for another to complete
+3. control hazard: when proper instructions cannot be executed in proper clock period because output of some instructions are not expected.
