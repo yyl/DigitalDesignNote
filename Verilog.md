@@ -6,7 +6,7 @@
 Behavioral descriptions => logic-circuit structures
 
 ### Module
-
+***
 - Basic unit in Verilog, containing:
 - declarations
     - names and types of inputs and outputs
@@ -21,7 +21,7 @@ Behavioral descriptions => logic-circuit structures
 ![Verilog module](verilog_module.png)
 
 ### Signals
-
+***
 - 4 types of possible values: 0, 1, x (unknown), z (high impedance, as in three-state)
 - operators: &, |, ^, ~ (XOR), ...
 - two types of signals: nets, variables
@@ -51,7 +51,7 @@ Behavioral descriptions => logic-circuit structures
 
 
 ### Vectors&Arrays
-
+***
 - vector: group of individual 1-bit signals: nets, variables, constants
 - bit select [1], part select [5:4], concatenate {}, replicate n{}
 - padding
@@ -60,7 +60,7 @@ Behavioral descriptions => logic-circuit structures
 
 
 ### Structural design elements
-
+***
 - this and following two are concurrent statements: be executed simultaneously in the same module
 - structural: instantiate and connect different gates and components using nets
 - built-in gates: and/nand, or/nor, xor/xnor, not/buf and 1-input three-state 
