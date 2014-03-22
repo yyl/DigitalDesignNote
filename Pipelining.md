@@ -17,6 +17,10 @@ Pipelining is an implementation technique in which multiple instructions are ove
 
 ![Pipelined laundry](pipelined_laundry.png)
 
+![Pipelined verilog](pipelined_verilog.png)
+
+A Verilog state machine with pipelined outputs.
+
 #### Pipeline hazards
 
 1. structural hazard: cannot support the combination of instructions in the same clock period.
