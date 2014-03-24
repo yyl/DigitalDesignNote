@@ -98,4 +98,12 @@ Describe the flow of data and operations on the circuit for **combinational circ
 
 ![Always block](always_block.png)
 
-- describe _sequential_ circuit
+- two types of _procedural_ assignment statements
+    - `var = expr ; // blocking`
+        - generally the same as assignments in other languages
+        - [rule] always use to create **combinational** logic
+    - `var <= expr ; // nonblocking`
+        - only assign the value of righthand side evaluation to left side after the entire block has been executed.
+        - during the _always_ block, the `var` holds the old value
+        - [rule] always use to create **sequential** logic
+        
