@@ -96,8 +96,6 @@ Describe the flow of data and operations on the circuit for **combinational circ
 
 #### always block
 
-![Always block](always_block.png)
-
 - two types of _procedural_ assignment statements
     - `var = expr ; // blocking`
         - generally the same as assignments in other languages
@@ -106,4 +104,15 @@ Describe the flow of data and operations on the circuit for **combinational circ
         - only assign the value of righthand side evaluation to left side after the entire block has been executed.
         - during the _always_ block, the `var` holds the old value
         - [rule] always use to create **sequential** logic
-        
+
+![Always block a](verilog_vrprimea.png)
+
+- declare `F` as `reg` because it appears on the lefthand side of an assignment statement
+- one-line block, no intermediate vars
+- need `begin-end` block for intermediate variables
+
+![Always block b](verilog_vrprimeb.png)
+
+- similar to the dataflow code, but use _always_ block
+- intermediate signals are `reg` within the block
+- `begin-end` block must be named if it contains intermediate signals
